@@ -4,6 +4,14 @@
   "description": "Utility tool for replacing any properties in an object",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarkkoSky/ts-rplc.git"
+  },
+  "homepage": "https://github.com/jarkkoSky/ts-rplc#readme",
+  "bugs": {
+    "url": "https://github.com/jarkkoSky/ts-rplc/issues"
+  },
   "keywords": [
     "typescript",
     "replace",
@@ -21,7 +29,7 @@
     "postversion": "git push && git push --tags"
   },
   "author": "Jarkko Skyttälä",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "fp-ts": "2.13.1",
     "ramda": "0.28.0"
