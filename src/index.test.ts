@@ -1,8 +1,8 @@
-import { fn } from '.';
+import { add } from '.';
 
 describe('index', () => {
   it('example test', () => {
-    const res = fn(1);
+    const res = add(1, 1);
 
     expect(res).toEqual(2);
   });

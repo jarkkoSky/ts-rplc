@@ -1,3 +1,3 @@
-export const fn = (n: number) => {
-  return 1 + n;
+export const add = (n: number, k: number) => {
+  return n + k;
 };

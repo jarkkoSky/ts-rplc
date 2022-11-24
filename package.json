@@ -9,6 +9,9 @@
     "replace",
     "test"
   ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npx jest",
     "build": "tsc",
