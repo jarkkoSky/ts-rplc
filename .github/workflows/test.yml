@@ -1,12 +1,13 @@
 name: Test
 
 on:
+  workflow_dispath:
   push:
     branches:
       - master
 
 jobs:
-  jest-tests:
+  unit-tests:
     name: Run unit tests
     runs-on: ubuntu-latest
     run: |
