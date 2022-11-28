@@ -1,3 +1,3 @@
-export const add = (n: number, k: number) => {
-  return n + k;
-};
+import { replacePropertyWithValue } from './replace-property-with-value';
+
+export { replacePropertyWithValue };
