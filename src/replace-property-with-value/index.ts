@@ -28,9 +28,7 @@ export const replacePropertyWithValue =
 
     if (isArray) {
       // @todo fix type
-      const t = pipe(item, A.map(replaceFn)) as Record<string, unknown>[];
-
-      return t;
+      return pipe(item, A.map(replaceFn)) as Record<string, unknown>[];
     }
 
     return {};
