@@ -1,6 +1,6 @@
-import { replacePropertyWithValue } from '.';
+import { replaceProperty } from '.';
 
-describe('replacePropertyWithValue', () => {
+describe('replaceProperty', () => {
   it('should replace property with value', () => {
     const obj = {
       test: 1,
@@ -12,7 +12,7 @@ describe('replacePropertyWithValue', () => {
       otherTest: 'test',
     };
 
-    expect(replacePropertyWithValue('test')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('test')('NewValue')(obj)).toEqual(expected);
   });
 
   it('should replace nested properties with value', () => {
@@ -44,7 +44,7 @@ describe('replacePropertyWithValue', () => {
       },
     };
 
-    expect(replacePropertyWithValue('test')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('test')('NewValue')(obj)).toEqual(expected);
   });
 
   it('should replace property with value in array', () => {
@@ -62,7 +62,7 @@ describe('replacePropertyWithValue', () => {
       },
     ];
 
-    expect(replacePropertyWithValue('test')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('test')('NewValue')(obj)).toEqual(expected);
   });
 
   it('should replace property with value in nested array', () => {
@@ -88,7 +88,7 @@ describe('replacePropertyWithValue', () => {
       },
     ];
 
-    expect(replacePropertyWithValue('nestedProp')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('nestedProp')('NewValue')(obj)).toEqual(expected);
   });
 
   it('should replace property with value in a double nested array', () => {
@@ -116,7 +116,7 @@ describe('replacePropertyWithValue', () => {
       },
     ];
 
-    expect(replacePropertyWithValue('nestedProp')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('nestedProp')('NewValue')(obj)).toEqual(expected);
   });
 
   it('should replace all instances of property with value', () => {
@@ -168,6 +168,6 @@ describe('replacePropertyWithValue', () => {
       },
     ];
 
-    expect(replacePropertyWithValue('test')('NewValue')(obj)).toEqual(expected);
+    expect(replaceProperty('test')('NewValue')(obj)).toEqual(expected);
   });
 });

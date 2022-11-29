@@ -1,3 +1,3 @@
-import { replacePropertyWithValue } from './replace-property-with-value';
+import { replaceProperty } from './replace-property';
 
-export { replacePropertyWithValue };
+export { replaceProperty };
