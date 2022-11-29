@@ -7,7 +7,7 @@ The catch is that this tool replaces properties anywhere in the object. It can h
 
 ## Motivation
 
-Motivation for creating this tool came from the need to sometimes make test data deterministic. Rather than always write a sketchy solution to this trivial task, I implemented a simple package with no dependencies.
+Motivation for creating this tool came from the need to sometimes make test data deterministic. Rather than always write a sketchy solution to this trivial task, I implemented a simple package utilizing fp-ts
 
 ## Install
 
