@@ -28,3 +28,8 @@ const obj = {
 
 const result = replaceProperty('test')('NewValue')(obj);
 ```
+
+## Future tasks
+
+- Implement replaceDate to replace any date value in an object with a desired value
+- Add automated publish when version number bumped
