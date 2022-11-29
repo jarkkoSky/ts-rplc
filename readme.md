@@ -11,7 +11,7 @@ Motivation for creating this tool came from the need to sometimes make test data
 
 ## Install
 
-`npm install ts-rplc`
+`npm install ts-rplc --save`
 
 ## Usage
 
