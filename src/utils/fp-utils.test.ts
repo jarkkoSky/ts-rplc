@@ -1,4 +1,4 @@
-import { isNonEmptyObjectArray, isObject } from './fp-utils';
+import { isNonEmptyObjectArray, isObject, mapRecordWithKey, pipe } from './fp-utils';
 
 describe('fp-utils', () => {
   describe('isObject', () => {
@@ -57,6 +57,30 @@ describe('fp-utils', () => {
     it('should return false when undefined', () => {
       const item = undefined;
       expect(isNonEmptyObjectArray(item)).toEqual(false);
+    });
+  });
+
+  describe('mapRecordWithKey', () => {
+    it('should map with key', () => {
+      const obj = {
+        thisIsKey: 'test',
+      };
+
+      const result = pipe(
+        obj,
+        mapRecordWithKey(([key, value]) => {
+          expect(key).toEqual('thisIsKey');
+          expect(value).toEqual('test');
+
+          return ['differentKey', 'differentValue'];
+        }),
+      );
+
+      const expected = {
+        differentKey: 'differentValue',
+      };
+
+      expect(result).toEqual(expected);
     });
   });
 });

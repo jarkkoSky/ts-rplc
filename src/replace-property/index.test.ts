@@ -53,9 +53,17 @@ describe('replaceProperty', () => {
         test: 1,
         otherTest: 'test',
       },
+      {
+        test: 2,
+        otherTest: 'test',
+      },
     ];
 
     const expected = [
+      {
+        test: 'NewValue',
+        otherTest: 'test',
+      },
       {
         test: 'NewValue',
         otherTest: 'test',
@@ -130,6 +138,9 @@ describe('replaceProperty', () => {
                 {
                   test: 'ccc',
                 },
+                {
+                  test: 'yyy',
+                },
               ],
             ],
           },
@@ -141,6 +152,7 @@ describe('replaceProperty', () => {
           },
           test: 'bbb',
         },
+        test5: [],
       },
     ];
 
@@ -151,6 +163,9 @@ describe('replaceProperty', () => {
             nestedProp: 'asd',
             nestedArray: [
               [
+                {
+                  test: 'NewValue',
+                },
                 {
                   test: 'NewValue',
                 },
@@ -165,6 +180,7 @@ describe('replaceProperty', () => {
           },
           test: 'NewValue',
         },
+        test5: [],
       },
     ];
 
