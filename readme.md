@@ -17,9 +17,11 @@ Motivation for creating this tool came from the need to sometimes make test data
 
 ## Usage
 
-<b>All exported functions are curried</b>
+All exported functions are curried
 
-### replaceProperty
+### <b>replaceProperty</b>
+
+`string -> string -> Object | Object[] -> Object | Object[]`
 
 ```javascript
 import { replaceProperty } from 'ts-rplc';
@@ -28,10 +30,16 @@ const obj = {
   test: 123,
 };
 
+/**
+ * 'test' => property name to search
+ * 'NewValue' => new value for property
+ * 'obj' => object or object array to transform
+ * */
 const result = replaceProperty('test')('NewValue')(obj);
+
+const expectedResult = {
+  test: 'NewValue',
+};
+
+// More examples can be found in src/replace-property/index.test.ts
 ```
-
-## Future tasks
-
-- Implement replaceDate to replace any date value in an object with a desired value
-- Add automated publish when version number bumped
