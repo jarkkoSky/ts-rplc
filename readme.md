@@ -1,5 +1,6 @@
 [![CI](https://github.com/jarkkoSky/ts-rplc/actions/workflows/ci.yml/badge.svg)](https://github.com/jarkkoSky/ts-rplc/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/jarkkoSky/ts-rplc/branch/master/graph/badge.svg?token=OL4MLK8WK6)](https://codecov.io/gh/jarkkoSky/ts-rplc)
+[![npm version](https://badge.fury.io/js/ts-rplc.svg)](https://badge.fury.io/js/ts-rplc)
 
 # TS-RPLC
 
