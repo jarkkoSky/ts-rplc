@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "npx jest",
+    "test": "npx jest --coverage",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build"
